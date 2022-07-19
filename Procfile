@@ -1,0 +1,1 @@
+worker : o && rm -rf node_modules && npm install yarn -g && yarn && npm run start

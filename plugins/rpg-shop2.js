@@ -1,0 +1,1 @@
+.sf plugins/rpg-shop.js
