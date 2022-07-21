@@ -28,4 +28,4 @@ jobs:
         cache: 'npm'
     - run: sudo apt-get install ffmpeg imagemagick webp -y
     - run: npm i && npm install pm2 -g
-    - run: pm2 start index.js && pm2 save && pm2 monit
+    - run: pm2 start index.js && pm2 save 
