@@ -18,6 +18,7 @@ ${'```%npmdesc```'}
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
+conn.sendPresenceUpdate('composing', m.chat)
 
   let tags
   let teks = `${args[0]}`.toLowerCase()
