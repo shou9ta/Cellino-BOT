@@ -12,6 +12,7 @@ global.readMore = more.repeat(4001)
 
 module.exports = {
     async handler(chatUpdate) {
+        conn.sendPresenceUpdate('composing', m.chat)    
         if (global.db.data == null) await loadDatabase()
         this.msgqueque = this.msgqueque || []
         // console.log(chatUpdate)//
