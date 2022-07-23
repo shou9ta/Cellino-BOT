@@ -48,8 +48,8 @@ module.exports = {
             m.exp = 0
             m.limit = false
             try {
-                let user = global.db.data.users[m.sender]
-                if (typeof user !== 'object') global.db.data.users[m.sender] = {}
+                let user = global.db.data.home[m.sender]
+                if (typeof user !== 'object') global.db.data.home[m.sender] = {}
                 if (user) {
                     if (!isNumber(user.joincount)) user.joincount = 1
                     if (!isNumber(user.healt)) user.healt = 0
@@ -61,6 +61,7 @@ module.exports = {
                     if (!isNumber(user.lastclaim)) user.lastclaim = 0
                     if (!isNumber(user.lastclaim2)) user.lastclaim2 = 0  
                     if (!isNumber(user.lastngojek)) user.lastngojek = 0
+                    if (!isNumber(user.lastbunuhi)) user.lastbunuhi = 0                    
                     if (!isNumber(user.lastnebang)) user.lastnebang = 0
                     if (!isNumber(user.lastnyampah)) user.lastnyampah = 0
                     if (!isNumber(user.lastowner)) user.lastowner = 0
@@ -150,6 +151,7 @@ module.exports = {
                     if (!isNumber(user.lastgift)) user.lastgift = 0
                     if (!isNumber(user.lastrob)) user.lastrob = 0
                     if (!isNumber(user.lastngojek)) user.lastngojek = 0
+                    if (!isNumber(user.lastbunuhi)) user.lastbunuhi = 0                    
                     if (!isNumber(user.lastgrab)) user.lastgrab = 0
                     if (!isNumber(user.lastberkebon)) user.lastberkebon = 0
                     if (!isNumber(user.lastcodereg)) user.lastcodereg = 0
@@ -224,7 +226,7 @@ module.exports = {
                     if (!('montir' in user)) user.montir = false
                     if (!('kuli' in user)) user.kuli = false
                     if (!('polisi' in user)) user.polisi = false
-                } else global.db.data.users[m.sender] = {
+                } else global.db.data.home[m.sender] = {
                     joincount: 1,
                     healt: 100,
                     level: 1,
@@ -234,7 +236,7 @@ module.exports = {
                     usebot: 0,
                     lastclaim: 0,
                     lastclaim2: 0,
-                    lastngojek: 0,
+                    lastbunuhi: 0,
                     lastnebang: 0,
                     lastnyampah: 0,
                     lastowner: 0,
@@ -243,7 +245,7 @@ module.exports = {
                     iron: 0,
                     common: 0,
                     uncommon: 0,
-                    mythic: 0,
+                    mythi 0,
                     legendary: 0,
                     pet: 0,
                     potion: 0,
@@ -307,7 +309,7 @@ module.exports = {
                     lastjb: 0,
                     lastrob: 0,
                     lastdaang: 0,
-                    lastngojek: 0,
+                    lastbunuhi: 0,
                     lastgrab: 0,
                     lastngocok: 0,
                     lastturu: 0,
@@ -330,7 +332,7 @@ module.exports = {
                     premiumTime: 0,
                     role: '',
                     autolevelup: false,
-                    pc: 0,
+                    p 0,
                     // Mancing cuk
              as: 0,
             paus: 0,
@@ -420,7 +422,7 @@ module.exports = {
                     sBye: '',
                     sPromote: '',
                     sDemote: '',
-                    desc: true,
+                    des true,
                     descUpdate: true,
                     stiker: false,
                     delete: false,
@@ -493,14 +495,14 @@ module.exports = {
             m.exp += Math.ceil(Math.random() * 10)
 
             let usedPrefix
-            let _user = global.db.data && global.db.data.users && global.db.data.users[m.sender]
+            let _user = global.db.data && global.db.data.home && global.db.data.home[m.sender]
 
-            global.prems = global.db.data.users[m.sender].premium ///JSON.parse(fs.readFileSync('./data/premium.json')) // Premium user has unlimited limit
+            global.prems = global.db.data.home[m.sender].premium ///JSON.parse(fs.readFileSync('./data/premium.json')) // Premium user has unlimited limit
             const isROwner = [global.conn.user.jid, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
             const isOwner = isROwner || m.fromMe
             if (!isOwner && db.data.settings.self) return // Saat mode self diaktifkan hanya eee yang dapat menggunakannya
             const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
-            const isPrems = isROwner || db.data.users[m.sender].premium || false
+            const isPrems = isROwner || db.data.home[m.sender].premium || false
             //let isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
             if (!isPrems && !m.isGroup && global.db.data.settings.groupOnly) return
             const groupMetadata = (m.isGroup ? ((conn.chats[m.chat] || {}).metadata || await this.groupMetadata(m.chat).catch(_ => null)) : {}) || {}
@@ -569,9 +571,9 @@ module.exports = {
 
                     if (!isAccept) continue
                     m.plugin = name
-                    if (m.chat in global.db.data.chats || m.sender in global.db.data.users) {
+                    if (m.chat in global.db.data.chats || m.sender in global.db.data.home) {
                         let chat = global.db.data.chats[m.chat]
-                        let user = global.db.data.users[m.sender]
+                        let user = global.db.data.home[m.sender]
                         if (name != 'o-unbanchat.js' && chat && chat?.isBanned) return // Except this
                         if (name != 'o-unbanuser.js' && user && user?.banned) return
                     }
@@ -617,7 +619,7 @@ module.exports = {
                     let xp = 'exp' in plugin ? parseInt(plugin.exp) : 17 // XP Earning per command
                     if (xp > 200) m.reply('Ngecit -_-') // Hehehe
                     else m.exp += xp
-                    if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
+                    if (!isPrems && plugin.limit && global.db.data.home[m.sender].limit < plugin.limit * 1) {
                         this.sendButton(m.chat, `Limit anda habis, silahkan beli melalui *${usedPrefix}buy*`, wm, 'Buy', '.buy', m)
                         // this.reply(m.chat, `Limit anda habis, silahkan beli melalui *${usedPrefix}buy*`, m)
                         continue // Limit habis
@@ -685,10 +687,10 @@ module.exports = {
             console.error(e)
         } finally {
             // conn.sendPresenceUpdate('composing', m.chat) 
-            //console.log(global.db.data.users[m.sender])
+            //console.log(global.db.data.home[m.sender])
             let user, stats = global.db.data.stats
             if (m) {
-                if (m.sender && (user = global.db.data.users[m.sender])) {
+                if (m.sender && (user = global.db.data.home[m.sender])) {
                     user.exp += m.exp
                     user.limit -= m.limit * 1
                 }
