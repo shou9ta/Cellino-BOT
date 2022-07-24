@@ -49,7 +49,7 @@ global.eror = '_*мααƒ ѕєяνєя тι∂αк ѕтαвιℓ..*_'
 
 global.pickRandom = pickRandom
 const _uptime = process.uptime() * 1000
-global.u = await conn.clockString(_uptime)
+global.u =  conn.clockString(_uptime)
 global.ucapan = ucapan()
 global.settings = global.db.data.settings
 global.petik = '```'
