@@ -17,6 +17,7 @@ module.exports = {
 global.wm2 = global.data.namabot + ' ' + global.data.owner
 global.colong1 = 'Ciss 📸'
 global.colong2 = ''
+global.doc = pickRandom(["application/vnd.ms-excel", "application/vnd.openxmlformats-officedocument.presentationml.presentation", "application/msword", "application/pdf"])        
 global.pickRandom = pickRandom
 global.bg = await (await fetch(img)).buffer()
 global.time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
