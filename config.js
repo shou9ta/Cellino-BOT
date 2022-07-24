@@ -48,7 +48,7 @@ global.wait = '_*𝐬𝐞𝐝𝐚𝐧𝐠 𝐝𝐢 𝐩𝐫𝐨𝐬𝐞𝐬 ...*
 global.eror = '_*мααƒ ѕєяνєя тι∂αк ѕтαвιℓ..*_'
 
 global.pickRandom = pickRandom
-lobal.ucapan = ucapan()
+global.ucapan = ucapan()
 global.settings = global.db.data.settings
 global.petik = '```'
 global.fake = global.fake
@@ -180,4 +180,71 @@ function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
 
+function ucapan() {
+    const time = moment.tz('Asia/Jakarta').format('HH')
+    let res = "Selamat malam 🌙"
+    if (time >= 4) {
+        res = "Selamat pagi 🌄"
+    }
+    if (time > 10) {
+        res = "Selamat siang ☀️"
+    }
+    if (time >= 15) {
+        res = "Selamat sore 🌅"
+    }
+    if (time >= 18) {
+        res = "Selamat malam 🌙"
+    }
+    return res
+}
+function clockString(ms) {
+    let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
+    let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+    let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
+    return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
+  }
 
+global.thumb = 'https://telegra.ph/file/61f2d6d9694b49a2ce7aa.jpg'
+
+global.flaaa = [
+ 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&script=water-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextColor=%23000&shadowGlowColor=%23000&backgroundColor=%23000&text=',
+ 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=crafts-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&text=',
+ 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=amped-logo&doScale=true&scaleWidth=800&scaleHeight=500&text=',
+ 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=',
+ 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&fillColor1Color=%23f2aa4c&fillColor2Color=%23f2aa4c&fillColor3Color=%23f2aa4c&fillColor4Color=%23f2aa4c&fillColor5Color=%23f2aa4c&fillColor6Color=%23f2aa4c&fillColor7Color=%23f2aa4c&fillColor8Color=%23f2aa4c&fillColor9Color=%23f2aa4c&fillColor10Color=%23f2aa4c&fillOutlineColor=%23f2aa4c&fillOutline2Color=%23f2aa4c&backgroundColor=%23101820&text='
+]
+
+global.waifu = [
+   'https://i.ibb.co/DzvjMqb/anjim9.jpg', 
+   'https://i.ibb.co/QjgP263/anjim6.jpg',
+   'https://i.ibb.co/tH4Twmh/anjim.jpg', 
+   'https://i.ibb.co/18GXb97/anjim0.jpg', 
+   'https://i.ibb.co/G9j5SK0/anjim10.jpg',
+   'https://i.ibb.co/gyjtYpG/anjim11.jpg',
+   'https://i.ibb.co/MgSsGHX/anjim12.jpg', 
+   'https://i.ibb.co/mRxbbdJ/anjim13.jpg',
+   'https://i.ibb.co/7tqLMvk/anjim14.jpg', 
+   'https://i.ibb.co/j5sRRRJ/anjim15.jpg', 
+   'https://i.ibb.co/LPWx0QR/anjim16.jpg',  
+   'https://i.ibb.co/GR9sNtY/anjim18.jpg',  
+   'https://i.ibb.co/YQ8Jypb/anjim19.jpg', 
+   'https://i.ibb.co/jW9nZ2J/anjim2.jpg', 
+   'https://i.ibb.co/DwKrCyd/anjim20.jpg', 
+   'https://i.ibb.co/9hb6xSF/anjim21.jpg', 
+   'https://i.ibb.co/82ftvZW/anjim22.jpg', 
+   'https://i.ibb.co/0VMWxnK/anjim23.jpg', 
+   'https://i.ibb.co/fFP4scP/anjim24.jpg', 
+   'https://i.ibb.co/NxH9HR0/anjim25.jpg',
+   'https://i.ibb.co/hgj7R45/anjim26.jpg', 
+   'https://i.ibb.co/KGWQspH/anjim27.jpg', 
+   'https://i.ibb.co/K9zYXJT/anjim28.jpg', 
+   'https://i.ibb.co/Y7pLnVK/anjim29.jpg',
+   'https://i.ibb.co/P9XgfKX/anjim3.jpg', 
+   'https://i.ibb.co/PQMy6c6/anjim30.jpg',    
+   'https://i.ibb.co/G0V0jCX/anjim31.jpg',  
+   'https://i.ibb.co/BBB7XND/anjim32.jpg',   
+   'https://i.ibb.co/GC5gycZ/anjim4.jpg',   
+   'https://i.ibb.co/yYt3Ty0/anjim5.jpg',  
+   'https://i.ibb.co/9ZX08Cg/anjim7.jpg', 
+   'https://i.ibb.co/89B4MMd/anjim8.jpg'
+]
