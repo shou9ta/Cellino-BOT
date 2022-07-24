@@ -19,6 +19,9 @@ global.colong1 = 'Ciss 📸'
 global.colong2 = ''
 global.bg = await (await fetch(img)).buffer()
 global.time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
+global.settings = global.db.data.settings
+global.time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
+
 
 global.pickRandom = pickRandom
 const _uptime = process.uptime() * 1000
