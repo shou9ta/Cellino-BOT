@@ -20,6 +20,7 @@ global.colong2 = ''
 global.bg = await (await fetch(img)).buffer()
 global.time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
 global.settings = global.db.data.settings
+global.ucapan = ucapan()        
 global.namabot = conn.user.name
 
 const _uptime = process.uptime() * 1000
