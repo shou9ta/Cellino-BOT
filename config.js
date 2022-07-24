@@ -47,7 +47,6 @@ global.bodlink = '@ahmdlui'
 global.wait = '_*𝐬𝐞𝐝𝐚𝐧𝐠 𝐝𝐢 𝐩𝐫𝐨𝐬𝐞𝐬 ...*_'
 global.eror = '_*мααƒ ѕєяνєя тι∂αк ѕтαвιℓ..*_'
 
-global.pickRandom = pickRandom
 global.petik = '```'
 global.fake = global.fake
 global.fkontak = global.fkontak
