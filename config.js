@@ -47,13 +47,6 @@ global.bodlink = '@ahmdlui'
 global.wait = '_*𝐬𝐞𝐝𝐚𝐧𝐠 𝐝𝐢 𝐩𝐫𝐨𝐬𝐞𝐬 ...*_'
 global.eror = '_*мααƒ ѕєяνєя тι∂αк ѕтαвιℓ..*_'
 
-global.petik = '```'
-global.fake = global.fake
-global.fkontak = global.fkontak
-global.img = pickRandom(global.waifu)
-global.fla = pickRandom(global.flaaa)
-global.packname = 'Powered By'
-global.author = 'Anjim'
         //Thx To The.sad.boy01 Buat Sc no enc nya
 
 
