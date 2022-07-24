@@ -17,6 +17,7 @@ module.exports = {
 global.wm2 = global.data.namabot + ' ' + global.data.owner
 global.colong1 = 'Ciss 📸'
 global.colong2 = ''
+global.pickRandom = pickRandom
 global.bg = await (await fetch(img)).buffer()
 global.time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
 global.settings = global.db.data.settings
@@ -843,6 +844,10 @@ fs.watchFile(file, () => {
     delete require.cache[file]
     if (global.reloadHandler) console.log(global.reloadHandler())
 })
+
+function pickRandom(list) {
+  return list[Math.floor(list.length * Math.random())]
+}
 
 function ucapan() {
     const time = moment.tz('Asia/Jakarta').format('HH')
