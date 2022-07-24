@@ -50,7 +50,6 @@ global.eror = '_*мααƒ ѕєяνєя тι∂αк ѕтαвιℓ..*_'
 global.petik = '```'
 global.fake = global.fake
 global.fkontak = global.fkontak
-global.doc = pickRandom(["application/vnd.ms-excel", "application/vnd.openxmlformats-officedocument.presentationml.presentation", "application/msword", "application/pdf"])
 global.img = pickRandom(global.waifu)
 global.fla = pickRandom(global.flaaa)
 global.packname = 'Powered By'
