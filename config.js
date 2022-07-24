@@ -48,7 +48,6 @@ global.wait = '_*𝐬𝐞𝐝𝐚𝐧𝐠 𝐝𝐢 𝐩𝐫𝐨𝐬𝐞𝐬 ...*
 global.eror = '_*мααƒ ѕєяνєя тι∂αк ѕтαвιℓ..*_'
 
 global.pickRandom = pickRandom
-global.ucapan = ucapan()
 global.settings = global.db.data.settings
 global.petik = '```'
 global.fake = global.fake
