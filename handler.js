@@ -24,7 +24,14 @@ global.time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
 global.settings = global.db.data.settings
 global.ucapan = ucapan()        
 global.namabot = conn.user.name
-
+global.petik = '```'
+global.fake = global.fake
+global.fkontak = global.fkontak
+global.img = pickRandom(global.waifu)
+global.fla = pickRandom(global.flaaa)
+global.packname = 'Powered By'
+global.author = 'Anjim'
+        
 const _uptime = process.uptime() * 1000
 global.u = await conn.clockString(_uptime)
         
