@@ -13,6 +13,17 @@ module.exports = {
         // if (chatUpdate.messages.length > 2 || !chatUpdate.messages.length) return
         if (chatUpdate.messages.length > 1) console.log(chatUpdate.messages)
         let m = chatUpdate.messages[chatUpdate.messages.length - 1]
+               
+global.wm2 = global.data.namabot + ' ' + global.data.owner
+global.colong1 = 'Ciss 📸'
+global.colong2 = ''
+global.bg = await (await fetch(img)).buffer()
+global.time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
+
+global.pickRandom = pickRandom
+const _uptime = process.uptime() * 1000
+global.u = await conn.clockString(_uptime)
+        
         if (!m) return
         console.log(JSON.stringify(m, null, 4))
         try {
