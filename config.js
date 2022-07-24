@@ -65,7 +65,7 @@ global.author = 'Anjim'
 global.wm2 = global.data.namabot + ' ' + global.data.owner
 global.colong1 = 'Ciss 📸'
 global.colong2 = ''
-global.bg = await (await fetch(img)).buffer()
+global.bg = img
 global.time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
 
 
