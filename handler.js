@@ -33,9 +33,8 @@ module.exports = {
         global.namabot = conn.user.name
         global.packname = 'Powered By'
         global.author = 'Anjim'
-        //global.author = 'The.sad.boy01'
+        //Thx To The.sad.boy01 Buat Sc no enc nya
         global.wm2 = global.data.namabot + ' ' + global.data.owner
-        global.wm = 'By AhmdLui 🥶🥶️'
         global.colong1 = 'Ciss 📸'
         global.colong2 = ''
         global.bg = await (await fetch(img)).buffer()
@@ -65,7 +64,6 @@ module.exports = {
                     if (!isNumber(user.lastngojek)) user.lastngojek = 0
                     if (!isNumber(user.lastnebang)) user.lastnebang = 0
                     if (!isNumber(user.lastnyampah)) user.lastnyampah = 0
-                    if (!isNumber(user.lastbunuhi)) user.lastbunuhi = 0                    
                     if (!isNumber(user.lastowner)) user.lastowner = 0
                     if (!isNumber(user.money)) user.money = 0
                     if (!isNumber(user.diamond)) user.diamond = 0
@@ -240,7 +238,6 @@ module.exports = {
                     lastngojek: 0,
                     lastnebang: 0,
                     lastnyampah: 0,
-                    lastbunuhi: 0,                    
                     lastowner: 0,
                     money: 0,
                     diamond: 0,
@@ -502,7 +499,7 @@ module.exports = {
             global.prems = global.db.data.users[m.sender].premium ///JSON.parse(fs.readFileSync('./data/premium.json')) // Premium user has unlimited limit
             const isROwner = [global.conn.user.jid, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
             const isOwner = isROwner || m.fromMe
-            if (!isOwner && db.data.settings.self) return // Saat mode self diaktifkan hanya owner yang dapat menggunakannya
+            if (!isOwner && db.data.settings.self) return // Saat mode self diaktifkan hanya eee yang dapat menggunakannya
             const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
             const isPrems = isROwner || db.data.users[m.sender].premium || false
             //let isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
@@ -752,7 +749,7 @@ module.exports = {
                         } finally {
                             text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc ? String.fromCharCode(8206).repeat(4001) + groupMetadata.desc : '') :
                                 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace(/@user/g, '@' + user.split`@`[0])
-                            await conn.sendButtonDoc(id, text, wm, action == 'add' ? 'selamat datang' : 'sampai jumpa', action === 'add' ? '.intro' : 'the.sad.boy01', fkontak,{
+                            await conn.sendButtonDoc(id, text, wm, action == 'add' ? 'selamat datang' : 'sampai jumpa', action === 'add' ? '.intro' : 'Lui-Sama', fkontak,{
   contextInfo: { externalAdReply :{
     mediaUrl: linkig,
     mediaType: 2,
