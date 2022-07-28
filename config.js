@@ -5,7 +5,7 @@ global.tempatnye = JSON.parse(fs.readFileSync('./src/tempatnye.json'))
 global.thumbt = global.img
 global.fsx = 999999999999
 global.kontak = [
-['14157614750', 'AhmdLui 🥶🥶', 'AhmdLui', 'ayonimasangat@gmail.com', true]
+['6281389368689', 'Shou6ta', 'Shou6taXD', 'whatsappsbot@gmail.com', true]
 
 ]
 global.APIs = { // API Prefix
@@ -37,12 +37,12 @@ global.APIKeys = { // APIKey Here
   'https://leyscoders-api.herokuapp.com': 'dappakntlll'
 }
 
-global.wm = 'Bot-Md 𝑩𝒚 Lui-sama'
+global.wm = 'Bot-Md 𝑩𝒚 Shou6ta'
 global.linkgc = 'https://chat.whatsapp.com/CnQV9lNcHuIENb8SQ9CaYP'
-global.linkig = 'https://www.instagram.com/ahmdlui'
+global.linkig = 'https://www.instagram.com/zammultramennexus'
 global.deslink = ''
 global.titlink = 'Folllow me on Instagram'
-global.bodlink = '@ahmdlui'
+global.bodlink = '@zammultramennexus'
 
 global.wait = '_*𝐬𝐞𝐝𝐚𝐧𝐠 𝐝𝐢 𝐩𝐫𝐨𝐬𝐞𝐬 ...*_'
 global.eror = '_*мααƒ ѕєяνєя тι∂αк ѕтαвιℓ..*_'
@@ -52,11 +52,11 @@ global.eror = '_*мααƒ ѕєяνєя тι∂αк ѕтαвιℓ..*_'
 
 //========Url Template Buttons==========//
 global.dtu = '𝑭𝒐𝒍𝒍𝒐𝒘'
-global.urlnya = "https://www.instagram.com/ahmdlui"
+global.urlnya = "https://www.instagram.com/zammultramennexus"
 
 //============= callButtons ============//
 global.dtc = '𝒄𝒂𝒍𝒍 𝒐𝒘𝒏𝒆𝒓'
-global.phn = '+62 895-3362-82144'
+global.phn = '+62 812-8936-8689'
 
 //========== Tampilan Bot =============//
 global.sa = '╭─'
