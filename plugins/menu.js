@@ -147,7 +147,7 @@ conn.sendPresenceUpdate('composing', m.chat)
     '': 'Tanpa Kategori'
   }
   if (teks == 'err') tags = {
-    'err': 'Fitut Yg Eror'
+    'err': 'Fitur Yg Eror'
   }  
   if (teks == 'owner') tags = {
     'owner': 'Owner',
@@ -253,37 +253,37 @@ conn.sendPresenceUpdate('composing', m.chat)
         ]
       },
       {
-        title: 'By AhmdLui️',
+        title: 'SHOU6TA',
         rows: [
-          { title: 'Semua Perintah', rowId: `${_p + command} all`, description: `Memunculkan Semua Perintah Yg Ada di Bot`},
-          { title: 'Game', rowId: `${_p + command} game`, description: `Menu Mini Game yang seru loh!`},
-          { title: 'Rpg', rowId: `${_p + command} rpg`, description: `Gak kalah serunya Dari fitur mini game kami fitur rpg atau roleplay ini juga sangat bagus dan seru loh`},
-          { title: 'XP', rowId: `${_p + command} xp`, description: `Fitur Disini Hanya Untuk tambahin atau untuk meperbagus fitur di mini gama dan rpg menu`},
-          { title: 'Stiker', rowId: `${_p + command} stiker`, description: `Fitur Ini paling sering di gunakan untuk membuat stiker dan lain-lain` },
-          { title: 'Kerang Ajaib', rowId: `${_p + command} kerangajaib`, description: `Menu Kerang Ajaib Seperti Di kartun Spongebob ` },
-          { title: 'Quotes', rowId: `${_p + command} quotes`, description: `Disini Berisikan fitur Kata Kata` },
-          { title: 'Grup', rowId: `${_p + command} grup`, description: `Fitur ini hanya untuk grup atau melindungi grup`},
-          { title: 'Premium', rowId: `${_p + command} premium`, description: `Hanya untuk Member Elite Bot`},
-          { title: 'Fitnah & Stres Generator', rowId: `${_p + command} fitnah`, description: `Di fitur ini hanya untuk Have fun aja Fitnah nya yah karna Fitnah Lebih Kejam Dari pada pembunuhan Loh`},          
-          { title: 'Asupan', rowId: `${_p + command} asupan`, description: `Fitur ini Berisikan Random Asupan Cecan yg siap membuat anda Full senyum`},
-          { title: 'Internet', rowId: `${_p + command} internet`, description: `Di fitur ini Berisikan Tentang pencarian Di lautan Internet`},
-          { title: 'Anonymous', rowId: `${_p + command} anonymous`, description: `Di sini Kalian Bisa berkenalan atau beinstraksi dengan pengguna Bod lainnya loh`},
-          { title: 'Anime', rowId: `${_p + command} anime`, description: `Hanya Untuk Ras Wibu`},
-          { title: 'Nulis & Logo', rowId: `${_p + command} nulis`, description: `Menu Nulis`},
-          { title: 'Downloader', rowId: `${_p + command} downloader`, description: `Di fitur ini kalian bisa mendowload video atau gambar dari beragam platform dengan menggunakan link`},
-          { title: 'Kumpulan Cerpen', rowId: `${_p + command} cerita`, description: `Di fitur ini hanya untuk kaum kutu buku`},
-          { title: 'Film', rowId: `${_p + command} film`, description: `Ada yg suka Film ? Yuk coba di lihat fitur menarik dari kami`},          
-          { title: 'Jadwal Tv DLL', rowId: `${_p + command} jadwal`, description: `Fitur ini berisikan tentang Jadwal Harian Anda yg bisa di publik,di internet`},
-          { title: 'Tools', rowId: `${_p + command} tools`, description: `Pengaturan atau bantuan Menu`},
-          { title: 'Fun', rowId: `${_p + command} fun`, description: `Hanya fitur Untuk Besenang senang ajah`},
-          { title: 'Gore & Hentai', rowId: `${_p + command} 18+`, description: `Anak di bawah umur di larang klik list ini di karenakan berisi konten dewasa dan gore yg membuat kalian kena mental`},
-          { title: 'Sound & Vn', rowId: `${_p + command} vn`, description: `Ada vn desah nya loh :v`},          
-          { title: 'Database', rowId: `${_p + command} database`, description: `Menu database`},
-          { title: 'Vote & Absen', rowId: `${_p + command} vote`, description: `Vote di grup untuk penentuan dalam suatu pemilihan yg di laksanakan di grup`},
-          { title: "Al-Qur\'an & Islami", rowId: `${_p + command} quran`, description: `Stay Halal Brother`},
-          { title: 'Pengubah Suara', rowId: `${_p + command} audio`, description: `Filter edit file audio maupun vn`},
-          { title: 'Jadi Bot', rowId: `${_p + command} jadibot`, description: `GAK PENTING`},
-          { title: 'Info', rowId: `${_p +command} info`, description: `sekedar ingfo`},
+          { title: '💬 | ALL COMMANDS', rowId: `${_p + command} all`, description: `MEMUNCULKAN SEMUA PERINTAH YG ADA DI BOT`},
+          { title: '🎮 | GAME', rowId: `${_p + command} game`, description: `BERMAIN GAME`},
+          { title: '⚔️ | RPG', rowId: `${_p + command} rpg`, description: `BERPETUALANG `},
+          { title: '🌠 | XP', rowId: `${_p + command} xp`, description: `UNTUK MENAIKAN LEVEL ANDA`},
+          { title: '🎨 | STICKER', rowId: `${_p + command} stiker`, description: `FITUR MEMBUAT STICKER DAN LAIN LAIN` },
+          { title: '🐚 | MAGIC SHELL', rowId: `${_p + command} kerangajaib`, description: `TANYAKAN KEPADA BOT ` },
+          { title: '💌 | QUOTES', rowId: `${_p + command} quotes`, description: `KATA-KATA KEREN,SEKEREN CINTAKU PADA MU:V` },
+          { title: '🏨 | GROUP', rowId: `${_p + command} grup`, description: `FITUR INI HANYA UNTUK GRUP ATAU MELINDUNGI GROUP`},
+          { title: '💲 | PREMIUM', rowId: `${_p + command} premium`, description: `MEMBER KESAYANGAN BOT`},
+          { title: '🤫 | FITNAH & STRES Generator', rowId: `${_p + command} fitnah`, description: `FITNAH LEBIH KEJAM DARI PADA SAYANG AKU KE KAMU:V`},          
+          { title: '🤩 | INTAKE', rowId: `${_p + command} asupan`, description: `ASUPAN SEHARI HARI:V`},
+          { title: '🌏 | INTERNET', rowId: `${_p + command} internet`, description: `MENCARI SESUATU? KLICK INI`},
+          { title: '👥 | ANONYMOUS ', rowId: `${_p + command} anonymous`, description: `BERBICARA DENGAN ORANG YANG TIDAK DIKENAL`},
+          { title: '☄️ | ANIME', rowId: `${_p + command} anime`, description: `BAU BAWANG:V`},
+          { title: '✍️ | WRITE & LOGO', rowId: `${_p + command} nulis`, description: `CIE MALES NULIS, SAMA:V`},
+          { title: '📁 | DOWNLOADER', rowId: `${_p + command} downloader`, description: `Di FITUR INI KALIAN BISA MENDOWNLOAD VIDEO ATAU GAMBAR DARI BERAGAM PLATFORM DENGAN MENGGUNAKAN LINK`},
+          { title: '📖 | SHORT STORY', rowId: `${_p + command} cerita`, description: `DI FITUR INI HANYA UNTUK KAUM KUTU BUKU`},
+          { title: '🎥 | FILM', rowId: `${_p + command} film`, description: `ADA YG SUKA FILM ? YUK COBA DI LIHAT FITUR MENARIK DARI KAMI`},          
+          { title: '⏰ | TIME TELEVISION DLL', rowId: `${_p + command} jadwal`, description: `FITUR INI BERISIKAN TENTANG JADWAL HARIAN ANDA YG BISA DI PUBLIK,DI INTERNET`},
+          { title: '✒️ | TOOLS', rowId: `${_p + command} tools`, description: `BANTUAN MENU`},
+          { title: '😂 | FUN', rowId: `${_p + command} fun`, description: `BERSENANG SENANG BERSAMA`},
+          { title: '🔞 | GORE & HENTAI', rowId: `${_p + command} 18+`, description: `ANAK DIBAWAH UMUR SKIP AJA!!`},
+          { title: '🔊 | SOUND&VOICE NOTE', rowId: `${_p + command} vn`, description: `FITUR SOUND DAN VOICE`},          
+          { title: '📂 | DATABASE', rowId: `${_p + command} database`, description: `TEMPAT ANDA MENYIMPAN DATA`},
+          { title: '✳️ | VOTE & ABSEN', rowId: `${_p + command} vote`, description: `UNTUK PENENTUAN`},
+          { title: "✨ | Al-Qur\'an & Islami", rowId: `${_p + command} quran`, description: `TOBAT YUK KAK🥰`},
+          { title: '🎶 | VOICE CHANGER', rowId: `${_p + command} audio`, description: `MENGUBAH SUARA MENJADI FILTER`},
+          { title: '🤖 | JADI BOT', rowId: `${_p + command} jadibot`, description: `GAK PENTING`},
+          { title: '⚠️ | INFORMATION', rowId: `${_p +command} info`, description: `JUST INFO`},
           { title: 'Tanpa Kategori', rowId: `${_p + command} tanpakategori`, description: `Disini tempat fitur yg biasanya dalam tahap uji coba`},
         ]
       },
@@ -297,7 +297,7 @@ conn.sendPresenceUpdate('composing', m.chat)
         {
         title: '️Gk Penting ini',
         rows: [
-          { title: 'Script Bot', rowId: `${_p}sc`, description: `Sc gw jelek kids cari yang di yt lebih bagus` },
+          { title: 'Script Bot', rowId: `${_p}sc`, description: `CARI SENDIRI YA KIDS` },
           { title: 'Owner', rowId: `${_p + command} owner`, description: `Jangan Lupa sv no owner Yah` },
         ]
       }
@@ -325,7 +325,7 @@ _${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik_
 
 Note: Jika ada Fitur yg Error Lapor ke owner
 `,
-      footer: `AhmdLui 🥶🥶`,
+      footer: `Shou6ta×`,
       title: judul,
       buttonText: "Klik here",
       sections
@@ -388,7 +388,7 @@ Note: Jika ada Fitur yg Error Lapor ke owner
 	 { remoteJid: "status@broadcast" } : {}) },
 	 message: { "liveLocationMessage": { "caption":"NOTE : Jangan Di spam️","h": `${wm}`, 'jpegThumbnail': fs.readFileSync('./src/logo.jpg')}}
 	} 
- await conn.send2ButtonDoc(m.chat, text.trim(), wm, `Owner 🥶🥶`, `.owner`, `Sumbangan 😥`, `.donate`, fkontak,{
+ await conn.send2ButtonDoc(m.chat, text.trim(), wm, `OWNER GANTENG:V`, `.owner`, `DONASI 💸`, `.donate`, fkontak,{
   contextInfo: { externalAdReply :{
     mediaUrl: linkig,
     mediaType: 2,
