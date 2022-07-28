@@ -27,7 +27,7 @@ global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
   'https://api.neoxr.eu.org': 'yntkts',
   'https://api.xteam.xyz': 'apivproject',
-  'https://melcanz.com': 'Apikeys',
+  'https://melcanz.com': 'wEDTUsWj',
   'https://api.lolhuman.xyz': 'Papah-Chan',
   'http://zekais-api.herokuapp.com': 'zekais',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
