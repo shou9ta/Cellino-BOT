@@ -30,11 +30,11 @@ module.exports = {
         global.img = pickRandom(global.waifu)
         global.fla = pickRandom(global.flaaa)
         global.namabot = conn.user.name
-        global.packname = 'Powered By'
-        global.author = 'Anjim'
+        global.packname = 'Shou6ta'
+        global.author = '6289530417506'
         //Thx To The.sad.boy01 Buat Sc no enc nya
         global.wm2 = global.data.namabot + ' ' + global.data.owner
-        global.colong1 = 'Ciss 📸'
+        global.colong1 = 'Ciss Yang Nyolong 📸'
         global.colong2 = ''
         global.bg = await (await fetch(img)).buffer()
         global.time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
