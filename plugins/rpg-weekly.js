@@ -6,7 +6,7 @@ let handler = async (m, { conn }) => {
     let _timers = (604800000 - (new Date - user.lastweekly))
     let timers = clockString(_timers) 
     if (new Date - user.lastweekly > 604800000) {
-    let str = `+15000 money 💹\n+4 Legendary crate 🧰\n+7 String 🕸️\n+5 Iron ⛓️\n+2 Gold 🪙`
+    let str = `+20000 money 💹\n+4 Legendary crate 🧰\n+7 String 🕸️\n+5 Iron ⛓️\n+2 Gold 🪙`
         conn.send2But(m.chat, str, wm, 'Claim', '.claim', 'Monthly', '.monthly',m)
         conn.reply(str)
         user.money += 15000
