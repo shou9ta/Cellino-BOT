@@ -10,7 +10,7 @@ const defaultMenu = {
   Hii %name!!
 %readmore`.trim(),
   header: '┌─〔 %category 〕',
-  body: '├ %cmd %islimit %isPremium',
+  body: '├ ✦ %cmd %islimit %isPremium',
   footer: '└────\n',
   after: `
 *%npmname@^%version*
@@ -390,9 +390,9 @@ Note: Jika ada Fitur yg Error Lapor ke owner
 	 { fromMe: false,
 	 participant: `0@s.whatsapp.net`, ...(m.chat  ? 
 	 { remoteJid: "status@broadcast" } : {}) },
-	 message: { "liveLocationMessage": { "caption":"NOTE : Syg Rika ❤️","h": `${wm}`, 'jpegThumbnail': fs.readFileSync('./src/logo.jpg')}}
+	 message: { "liveLocationMessage": { "caption":"NOTE : SHOU6TA","h": `${wm}`, 'jpegThumbnail': fs.readFileSync('./src/logo.jpg')}}
 	} 
-    conn.send2ButtonImg(m.chat, fla + `${command} ${teks}`, text.trim(), wm, `Own😎`, `${_p}owner`, `Sumbangan🥶`, `${_p}donasi`, fliveLoc)		
+    conn.send2ButtonImg(m.chat, fla + `${command} ${teks}`, text.trim(), wm, `OWNER GANTENG`, `${_p}owner`, `DONASI💸`, `${_p}donasi`, fliveLoc)		
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
