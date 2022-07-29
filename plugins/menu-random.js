@@ -129,7 +129,7 @@ let handler = async (m, { conn, command, usedPrefix }) => {
 Nih!!`,
       footer: `sebagian tidak bisa di gunakan di grup karena berbau dewasa`,
       title: ``,
-      buttonText: "Klik here",
+      buttonText: "CLICK HERE ⎙",
       sections
     }
     return conn.sendMessage(m.chat, listMessage, { quoted: fkontak, mentions: await conn.parseMention(judul), contextInfo: { forwardingScore: 99999, isForwarded: true }})
