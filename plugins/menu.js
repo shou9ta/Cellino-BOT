@@ -327,7 +327,7 @@ Note: Jika ada Fitur yg Error Lapor ke owner
 `,
       footer: `Shou6ta×`,
       title: judul,
-      buttonText: "Klik here",
+      buttonText: "CLICK HERE ⎙",
       sections
     }
     return conn.sendMessage(m.chat, listMessage, { quoted: fliveLoc, mentions: await conn.parseMention(judul), contextInfo: { forwardingScore: 99999, isForwarded: true }})
