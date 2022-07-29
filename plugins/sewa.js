@@ -8,8 +8,7 @@ let handler = async (m, { conn }) => {
   title: `${await conn.getName(conn.user.jid)}`,
   description: ` *• SEWA BOT & UP TO PREMIUM •*
         
-karena bot baru di buat jadi untuk join gc free :)
-Lalu untuk premium chat own aja
+SEWA BOT? CHAT OWNER
 `,
   buttonText: 'Harga Bisa Di pertimbangkan',
   listType: 2,
@@ -21,7 +20,7 @@ Lalu untuk premium chat own aja
   jpegThumbnail: d },
   businessOwnerJid: `${owner[0]}@s.whatsapp.net`
   },
-  footerText: 'https://github.com/AhmdLui',
+  footerText: 'https://github.com/AzamXd',
   }},{})
   conn.relayMessage(prepare.key.remoteJid,prepare.message,{messageId:prepare.key.id})
 }
